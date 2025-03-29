@@ -12,6 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: white;
+    
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     gap: 10px;
-    width: 80%;
+    width: 80%;    
 }
 
 .box {
@@ -28,18 +29,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .profile {
+    background-color: blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+.sobre{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 10px;
+
+}
+.sobre>p,a{ 
+    background-color: #5e83d3;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
 }
 
+
+.sobre>p,a:hover{ 
+    background-color: white;
+    color: #5e83d3;
+}
 .profile img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
 }
