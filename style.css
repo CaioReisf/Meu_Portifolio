@@ -1,18 +1,21 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Sora", sans-serif;
+    font-weight: 900;
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: white;
-    
+    min-height: 100vh;    
+    background-color: rgb(22, 22, 22);
 }
 
 .container {
@@ -23,17 +26,41 @@ body {
     width: 80%;    
 }
 
+/* Estilização da caixa com borda animada */
 .box {
-    background-color: #3b5998; /* Azul semelhante ao da imagem */
+    background-color: rgb(36, 35, 35);
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    position: relative;   
+}
+
+/* Criando a borda animada */
+.box::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, green, rgb(0, 23, 128), rgb(104, 204, 104));;
+    background-size: 300%;
+    border-radius: 25px;
+    z-index: -1;
+    filter: blur(5px);
+    animation: glow 3s infinite linear;
+}
+
+@keyframes glow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .profile {
-    background-color: blueviolet;
+    background-color: rgb(36, 35, 35);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,15 +68,16 @@ body {
     flex-flow: column nowrap;
     gap: 10px;
 }
-.sobre{ 
+
+.sobre { 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     gap: 10px;
-
 }
-.sobre>p,a{ 
+
+.sobre > p { 
     background-color: #5e83d3;
     padding: 10px;
     text-transform: uppercase;
@@ -58,11 +86,11 @@ body {
     color: white;
 }
 
-
-.sobre>p,a:hover{ 
+.sobre > p:hover { 
     background-color: white;
     color: #5e83d3;
 }
+
 .profile img {
     width: 100px;
     height: 100px;
@@ -84,6 +112,32 @@ body {
 }
 
 .large-box {
-    grid-column: span 2;
+    grid-column: span 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;   
+    gap: 30px;
+}
+
+.larga > a { 
+   
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;    
+}
+
+.larga > a:hover { 
+    background-color: white;
+    color: #5e83d3;
+}
+
+.large-box>p{
+    text-align: center;
+    color: white;    
+    font-weight: 100;
+    text-transform: uppercase;      
+    font-size:0.8em;
 }
