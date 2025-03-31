@@ -34,7 +34,9 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    position: relative;   
+    position: relative; 
+    margin: 10px;
+    
 }
 
 /* Criando a borda animada */
@@ -49,7 +51,7 @@ body {
     background-size: 300%;
     border-radius: 25px;
     z-index: -1;
-    filter: blur(5px);
+    filter: blur(1px);
     animation: glow 3s infinite linear;
 }
 
