@@ -80,7 +80,7 @@ body {
 }
 
 .sobre > p { 
-    background-color: #5e83d3;
+    background: linear-gradient(45deg, rgb(127, 243, 127), rgb(132, 153, 245), rgb(104, 204, 104));;
     padding: 10px;
     text-transform: uppercase;
     border-radius: 15px;
@@ -123,12 +123,13 @@ body {
 }
 
 .larga > a { 
-   
-    padding: 10px;
+    background: linear-gradient(45deg, rgb(127, 243, 127), rgb(132, 153, 245), rgb(104, 204, 104));;
+    padding: 12px;
     text-transform: uppercase;
     border-radius: 15px;
     text-decoration: none;
-    color: white;    
+    color: white;  
+   
 }
 
 .larga > a:hover { 
@@ -142,4 +143,53 @@ body {
     font-weight: 100;
     text-transform: uppercase;      
     font-size:0.8em;
+}
+
+
+
+.slider-container {    
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
 }
