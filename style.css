@@ -27,8 +27,7 @@ body {
 }
 
 /* Estilização da caixa com borda animada */
-.box {
-    border: 1px solid white;
+.box {    
     background-color: rgb(36, 35, 35);
     padding: 20px;
     display: flex;
@@ -52,8 +51,8 @@ body {
     background-size: 300%;
     border-radius: 25px;
     z-index: -1;
-    filter: blur(150px);
-    animation: glow 5s infinite linear;
+    filter: blur(1px);
+    animation: glow 3s infinite linear;
 }
 
 @keyframes glow {
@@ -62,8 +61,7 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-.profile {
-    border: 1px solid white;
+.profile {    
     background-color: rgb(36, 35, 35);
     display: flex;
     justify-content: center;
@@ -115,8 +113,7 @@ body {
     border-radius: 10px;
 }
 
-.large-box {
-    border: 1px solid white;
+.large-box {    
     grid-column: span 1;
     display: flex;
     justify-content: center;
