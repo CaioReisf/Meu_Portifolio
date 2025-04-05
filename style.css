@@ -18,7 +18,7 @@ body {
     background-color: rgb(22, 22, 22);
 }
 
-.container {
+.container {       
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
@@ -28,6 +28,7 @@ body {
 
 /* Estilização da caixa com borda animada */
 .box {
+    border: 1px solid white;
     background-color: rgb(36, 35, 35);
     padding: 20px;
     display: flex;
@@ -47,12 +48,12 @@ body {
     left: -5px;
     right: -5px;
     bottom: -5px;
-    background: linear-gradient(45deg, green, rgb(0, 23, 128), rgb(104, 204, 104));;
+    background: linear-gradient(45deg, rgb(59, 177, 147), rgb(0, 23, 128));;
     background-size: 300%;
     border-radius: 25px;
     z-index: -1;
-    filter: blur(1px);
-    animation: glow 3s infinite linear;
+    filter: blur(150px);
+    animation: glow 5s infinite linear;
 }
 
 @keyframes glow {
@@ -62,6 +63,7 @@ body {
 }
 
 .profile {
+    border: 1px solid white;
     background-color: rgb(36, 35, 35);
     display: flex;
     justify-content: center;
@@ -80,7 +82,7 @@ body {
 }
 
 .sobre > p { 
-    background: linear-gradient(45deg, rgb(127, 243, 127), rgb(132, 153, 245), rgb(104, 204, 104));;
+    background-color:#5e83d3;
     padding: 10px;
     text-transform: uppercase;
     border-radius: 15px;
@@ -100,13 +102,13 @@ body {
     object-fit: cover;
 }
 
-.cards {
+.cards {    
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
-.card {
+.card {    
     width: 80px;
     height: 100px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -114,6 +116,7 @@ body {
 }
 
 .large-box {
+    border: 1px solid white;
     grid-column: span 1;
     display: flex;
     justify-content: center;
@@ -123,7 +126,7 @@ body {
 }
 
 .larga > a { 
-    background: linear-gradient(45deg, rgb(127, 243, 127), rgb(132, 153, 245), rgb(104, 204, 104));;
+    background-color:#5e83d3;
     padding: 12px;
     text-transform: uppercase;
     border-radius: 15px;
@@ -143,53 +146,4 @@ body {
     font-weight: 100;
     text-transform: uppercase;      
     font-size:0.8em;
-}
-
-
-
-.slider-container {    
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-
-.slides {
-    display: flex;
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    width: 100%;
-    flex-shrink: 0;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 5px;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-.prev:hover, .next:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
 }
