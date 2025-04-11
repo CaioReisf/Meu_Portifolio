@@ -7,7 +7,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: "Sora", sans-serif;
-    font-weight: 900;
+    font-size: medium;    
 }
 
 body {
@@ -43,10 +43,10 @@ body {
 .box::before {
     content: "";
     position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
     background: linear-gradient(45deg, rgb(59, 177, 147), rgb(0, 23, 128));;
     background-size: 300%;
     border-radius: 25px;
