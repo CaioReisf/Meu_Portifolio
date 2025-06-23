@@ -230,7 +230,7 @@ header div ul a:hover{
     width: 300px;
     padding: 40px;
     border-radius: 10px;
-    height: 300px;
+    height: 340px;
     transition: all 0.5s ease;
 }
 .s3 .cards .card1 svg{
@@ -245,6 +245,10 @@ header div ul a:hover{
     transform: translateY(-10px);
 
 
+}
+
+#card2{
+  background-color: var(--cor-neutra);
 }
 
 
@@ -653,3 +657,52 @@ footer {
     display: none; /* Esconde o menu padrão */
   }
 }
+
+
+
+
+.full {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid #ffffff;
+      animation: digita 3s steps(20) forwards, piscaCursor 0.7s step-end infinite;
+      width: 0;
+      color: var(--cor-destaque);
+    }
+
+    @keyframes digita {
+      from {
+        width: 0;
+      }
+      to {
+        width: 12ch; /* quantidade de caracteres de "Full-Stack" */
+      }
+    }
+
+    @keyframes piscaCursor {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    .slogan p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .slogan input {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #a38bfa;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .slogan input:hover {
+      background-color: #7a63d2;
+    }

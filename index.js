@@ -17,7 +17,7 @@
       overlay.classList.toggle("show");
     });
 
-    overlay.addEventListener("click", () => {
+    overlay.addEventListener("click", () =>    {
       drawer.classList.remove("open");
       hamburger.classList.remove("active");
       overlay.classList.remove("show");
