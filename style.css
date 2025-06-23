@@ -95,23 +95,24 @@ header div ul a:hover{
 
 .s1{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-flow: column wrap;
     width: 100%;
     color: var(--cor-texto);
     margin-top: 22%;
-    padding-left: 170px;
+    
     
     
 }
 
 .s1 div{
     display: flex;
-    align-items:start ;
+    align-items:center ;
     justify-content: center;
     flex-flow: column wrap;
     gap: 30px;
+    text-align: center;
     
     
 }
@@ -119,9 +120,14 @@ header div ul a:hover{
 .s1 div h1{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 2.7rem;
+    font-size: 2rem;
     line-height: 42px;
     
+}
+.s1 div h1 .nome{
+  font-size: 4rem;
+  color: var(--cor-texto);
+  
 }
 .s1 div p{
     color: var(--cor-subtexto);
@@ -661,23 +667,19 @@ footer {
 
 
 
-.full {
-      display: inline-block;
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: 2px solid #ffffff;
-      animation: digita 3s steps(20) forwards, piscaCursor 0.7s step-end infinite;
-      width: 0;
-      color: var(--cor-destaque);
+.nome {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #a38bfa;
     }
 
-    @keyframes digita {
-      from {
-        width: 0;
-      }
-      to {
-        width: 12ch; /* quantidade de caracteres de "Full-Stack" */
-      }
+    .digitando {
+      font-size: 1.8rem;
+      border-right: 2px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: piscaCursor 0.7s step-end infinite;
     }
 
     @keyframes piscaCursor {

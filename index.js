@@ -22,3 +22,42 @@
       hamburger.classList.remove("active");
       overlay.classList.remove("show");
     });
+
+
+     const el = document.getElementById("text");
+    const frases = [
+      "Desenvolvedor Full-Stack",
+      "Desenvolvedor Freelancer",
+      "Especialista em Front-End"
+    ];
+
+    let fraseIndex = 0;
+    let charIndex = 0;
+    let apagando = false;
+
+    function digita() {
+      const fraseAtual = frases[fraseIndex];
+      if (!apagando) {
+        el.textContent = fraseAtual.substring(0, charIndex + 1);
+        charIndex++;
+        el.style.color ='#a48edb'
+
+        if (charIndex === fraseAtual.length) {
+          apagando = true;
+          setTimeout(digita, 1800); // Pausa depois de escrever tudo
+          return;
+        }
+      } else {
+        el.textContent = fraseAtual.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+          apagando = false;
+          fraseIndex = (fraseIndex + 1) % frases.length;
+        }
+      }
+
+      setTimeout(digita, apagando ? 50 : 100); // velocidade de digitação/apagamento
+    }
+
+    digita();
