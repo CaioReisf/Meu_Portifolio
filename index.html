@@ -1,50 +1,193 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caio Reis</title><!---{}-->
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <title>Caio Reis Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <div class="box profile">            
-            <img src="129194635.png" alt="Foto">
-            <div class="sobre">                
-                <p><i class="fa-solid fa-user"></i> Caio reis</p>
-                <p><i class="fa-solid fa-user"></i> 21 anos</p>
-                <p><i class="fa-solid fa-desktop"></i> Freelanceer</p>
-                <p><i class="fa-solid fa-globe"></i> ingles e portugues</p>            
-            </div>                
-        </div> 
+    <header id="meuHeader">
 
-        <div class="box">
-            <div class="cards">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                        <!-- ✅ BOTÃO HAMBÚRGUER -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- ✅ MENU LATERAL (DRAWER) -->
+                <aside class="drawer-menu" id="drawerMenu">
+                    <ul>
+                    <li><a href="#meuHeader">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Contato</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </aside>
+
+                <!-- ✅ OVERLAY ESCURO -->
+                <div class="overlay" id="overlay"></div>
+
+
+
+
+        
+         
+        <div class="menu">
+            <ul>
+                <a href="#">
+                    <li>Inicio</li>
+                </a>
+                <a href="#sobre">
+                    <li>Sobre Mim</li>
+                </a>
+                <a href="#servicos">
+                    <li>Serviços</li>
+                </a>
+                <a href="#projetos">
+                    <li>Projetos</li>
+                </a>
+                <a href="#contato">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <section class="s1">
+
+        <div class="slogan">
+            <h1> <span class="nome">CAIO REIS</span> <br>Desenvolvedor Full-Stack</h1>
+            <p>criando experiências web dinâmicas, amigáveis e bem projetadas.</p>
+            <a href="#contato"><input type="button" value="Solicitar Trabalho"></a>
+        </div>
+    </section>
+
+    <section class="s2"id="sobre">
+        <div class="sobre" >
+            <div class="txtsobre">
+                <h2>SOBRE MIM :</h2>
+                 
+                <p>Olá! Meu nome é Caio Reis, tenho 22 anos e sou estudante de Análise e Desenvolvimento de Sistemas. Atuo como designer gráfico e desenvolvedor freelancer.</p>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/CaioReisf?tab=overview&from=2023-12-01&to=2023-12-31" target="_blank"><i class="fa-brands fa-git-alt"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            
+            <div class="equipe">
+                <img src="imagens/lain 2.jpg" alt="equipe" width="400px">
             </div>
         </div>
 
-        <div class="box profile">            
-            <div class="sobre">
-                <p><i class="fa-brands fa-html5"></i> Html 5</p>
-                <p><i class="fa-brands fa-css3-alt"></i> CSS 3</p>
-                <p><i class="fa-brands fa-react"></i> react</p>
-                <p><i class="fa-brands fa-square-js"></i> java script</p>     
-                <p><i class="fa-brands fa-wordpress-simple"></i> wordpress</p>    
-            </div>                       
-        </div>    
-        <div class="box large-box">
-             <p>Olá! Meu nome é Caio Reis, tenho 21 anos e sou estudante de Análise e Desenvolvimento de Sistemas. Atuo como designer gráfico e desenvolvedor front-end freelancer.</p>
-            <div class="larga">               
-                <a href="#"><i class="fa-brands fa-whatsapp"></i> contato</a>
-                <a href="https://github.com/CaioReisf?tab=overview&from=2023-12-01&to=2023-12-31" target="_blank"><i class="fa-brands fa-git-alt"></i> github</a>
+        <section class="s3" id="servicos">
+        <h2>O QUE POSSO FAZER :</h2>
+
+        <div class="cards">
+            <div class="card1">
+              <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#a48edb"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h461v-163H140v163Zm521 0h159v-386H661v386ZM140-443h461v-163H140v163Z"/></svg>
+                <h3>Desenvolvimento de Software</h3>
+                <p>Sistemas web e mobile personalizados para sua operação</p>
+
             </div>
-        </div> 
+
+             <div class="card1">
+               <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#a48edb"><path d="M320-242 80-482l242-242 43 43-199 199 197 197-43 43Zm318 2-43-43 199-199-197-197 43-43 240 240-242 242Z"/></svg>
+                <h3>Consultoria <br>de TI</h3>
+                <p>Diagnóstico e planejamento estratégico em tecnologia.</p>
+
+            </div>
+             <div class="card1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#a48edb"><path d="M120-120v-76l60-60v136h-60Zm165 0v-236l60-60v296h-60Zm165 0v-296l60 61v235h-60Zm165 0v-235l60-60v295h-60Zm165 0v-396l60-60v456h-60ZM120-356v-85l280-278 160 160 280-281v85L560-474 400-634 120-356Z"/></svg>
+                <h3>Automação de Processos</h3>
+                <p>Reduza custos e aumente a produtividade com RPA e integração.</p>
+
+            </div> 
+            
+            <div class="card1">
+                 <div class="txtsobre">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#a48edb"><path d="M500-220Zm-340 60v-94q0-38 19-65t49-41q67-30 128.5-45T480-420q38.02 0 75.01 6T630-397l-48 47q-26-5-50.9-7.5-24.89-2.5-51.1-2.5-57 0-111 11.5T252-306q-14 7-23 21.5t-9 30.5v34h280v60H160Zm400 40v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T902.09-340L683-120H560Zm300-263-37-37 37 37ZM620-180h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19ZM480-481q-63 0-106.5-43.5T330-631q0-63 43.5-106.5T480-781q63 0 106.5 43.5T630-631q0 63-43.5 106.5T480-481Zm0-60q38 0 64-26t26-64q0-38-26-64t-64-26q-38 0-64 26t-26 64q0 38 26 64t64 26Zm0-90Z"/></svg>
+                <p><i class="fa-brands fa-html5"></i>  Html 5</p>
+                <p><i class="fa-brands fa-css3"></i>  Css 3</p>
+                <p><i class="fa-brands fa-react"></i>  React</p>
+                <p><i class="fa-brands fa-square-js"></i>  JavaScrpit</p>
+                <p><i class="fa-brands fa-wordpress-simple"></i>  wordpress</p> 
+                <p><i class="fa-brands fa-typescript"></i>  TypeScript</p> 
+                <p><i class="fa-brands fa-figma"></i>  Figma</p>
+              
+            </div>
+
+            
+           
+
+        </div>
+    </section>
+
+    <section class="s3" id="projetos">
+        <h2>PROJETOS :</h2>
+
+        <div class="cards">
+            <div class="card1">
+                <img src="imagens/lain 2.jpg" alt="jj" width="100px">
+                <h3>Desenvolvimento de Software</h3>
+                <p>Sistemas web e mobile personalizados para sua operação</p>
+
+            </div>
+
+             <div class="card1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#3b82f6"><path d="M120-120v-76l60-60v136h-60Zm165 0v-236l60-60v296h-60Zm165 0v-296l60 61v235h-60Zm165 0v-235l60-60v295h-60Zm165 0v-396l60-60v456h-60ZM120-356v-85l280-278 160 160 280-281v85L560-474 400-634 120-356Z"/></svg>
+                <h3>Consultoria <br>de TI</h3>
+                <p>Diagnóstico e planejamento estratégico em tecnologia.</p>
+
+            </div>
+             <div class="card1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#3b82f6"><path d="m388-80-20-126q-19-7-40-19t-37-25l-118 54-93-164 108-79q-2-9-2.5-20.5T185-480q0-9 .5-20.5T188-521L80-600l93-164 118 54q16-13 37-25t40-18l20-127h184l20 126q19 7 40.5 18.5T669-710l118-54 93 164-108 77q2 10 2.5 21.5t.5 21.5q0 10-.5 21t-2.5 21l108 78-93 164-118-54q-16 13-36.5 25.5T592-206L572-80H388Zm48-60h88l14-112q33-8 62.5-25t53.5-41l106 46 40-72-94-69q4-17 6.5-33.5T715-480q0-17-2-33.5t-7-33.5l94-69-40-72-106 46q-23-26-52-43.5T538-708l-14-112h-88l-14 112q-34 7-63.5 24T306-642l-106-46-40 72 94 69q-4 17-6.5 33.5T245-480q0 17 2.5 33.5T254-413l-94 69 40 72 106-46q24 24 53.5 41t62.5 25l14 112Zm44-210q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-130Z"/></svg>
+                <h3>Automação de Processos</h3>
+                <p>Reduza custos e aumente a produtividade com RPA e integração.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+  <h2>Entre em contato</h2>
+  <p>Respondo em até 24h úteis.</p>
+
+  <form action="#" method="post" class="form-neontech">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="text" name="empresa" placeholder="Empresa" required>
+    <input type="email" name="email" placeholder="E-mail" required>
+    <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+   </section>
+
+   <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Meus Serviços</h3>
+        <ul>
+          <li>- Desenvolvimento de Software</li>
+          <li>- Consultoria de TI</li>
+          <li>- Automação de Processos</li>
+        </ul>
+      </div>
     </div>
+
+    <div class="footer-bottom">
+      © 2025 por <strong>CAIOREIS</strong>. Todos os direitos reservados.
+    </div>
+  </footer>
+
+</section> 
+
+    <script src="index.js"></script>
+    
+    
 </body>
 </html>
-
