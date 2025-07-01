@@ -199,14 +199,10 @@ header div ul a:hover{
 
 .s2 .sobre .equipe img{
   border-radius: 20px;
-  transition: all 0.5s ease;
+ 
     
 }
 
-.s2 .sobre .equipe img:hover{
-  transform: translateY(-7px);
-  box-shadow: 0px 5px 15px black;
-}
 
 
 /* TERCEIRA SECAO */
@@ -238,6 +234,7 @@ header div ul a:hover{
     border-radius: 10px;
     height: 340px;
     transition: all 0.5s ease;
+    
 }
 .s3 .cards .card1 svg{
     background-color: var(--cor-primaria);
@@ -249,6 +246,7 @@ header div ul a:hover{
 
 .s3 .cards .card1:hover{
     transform: translateY(-10px);
+    
 
 
 }
