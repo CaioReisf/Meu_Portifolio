@@ -156,7 +156,7 @@ header div ul a:hover{
  --glow-spread-color: rgba(191, 123, 255, 0.781);
  --enhanced-glow-color: rgb(231, 206, 255);
  --btn-color: rgb(100, 61, 136);
- border: .25em solid var(--glow-color);
+ border: .15em solid var(--glow-color);
  padding: 1em 3em;
  color: var(--glow-color);
  font-size: 15px;
@@ -199,6 +199,9 @@ header div ul a:hover{
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
 }
+
+
+
 /* SEGUNDA SECAO */
 
 .s2{
@@ -238,6 +241,7 @@ header div ul a:hover{
     font-size: 1.5rem;
     color: var(--cor-subtexto);
     
+    
 }
 
 .s2 .sobre .txtsobre a i:hover{
@@ -248,7 +252,7 @@ header div ul a:hover{
 }
 
 .s2 .sobre .equipe img{
-  border-radius: 20px;
+  border-radius: 1000px;
  
     
 }
@@ -507,7 +511,7 @@ header div ul a:hover{
 footer {
   background-color:#332940;
   color: #ccc;
-  padding: 40px 20px;
+  padding: 10px ;
   font-family: var(--font-sora);
   width: 100%;
   
@@ -518,7 +522,7 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -569,7 +573,18 @@ footer {
   font-size: 12px;
   color: #888;
 }
+.footer-container a{
+    font-size: 1.5rem;
+    color: var(--cor-subtexto);
+    
+}
 
+.footer-container a i:hover{
+  color: var(--cor-neutra);
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px black;
+
+}
 /* ==========================
    RESPONSIVO
    ========================== */
