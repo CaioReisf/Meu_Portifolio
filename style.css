@@ -258,6 +258,12 @@ header div ul a:hover{
   background-color: var(--cor-neutra);
 }
 
+.s3 .deploy{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 
 
 /* FORMULARIO */
@@ -722,4 +728,4 @@ footer {
     }
 
 
-    
+  
