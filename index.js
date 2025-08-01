@@ -72,4 +72,15 @@
                 <p><i class="fa-brands fa-square-js"></i>  JavaScrpit</p>
                 <p><i class="fa-brands fa-wordpress-simple"></i>  wordpress</p> 
                 <p><i class="fa-brands fa-typescript"></i>  TypeScript</p> 
-                <p><i class="fa-brands fa-figma"></i>  Figma</p>*/
+                <p><i class="fa-brands fa-figma"></i>  Figma</p>
+                
+                
+                
+                 <div class="tecs">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>  
+                <i class="fa-brands fa-react"></i>  
+                <i class="fa-brands fa-square-js"></i> 
+                <i class="fa-brands fa-wordpress-simple"></i>
+                <i class="fa-brands fa-figma"></i>
+            </div>  */
