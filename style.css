@@ -181,13 +181,25 @@ header div ul a:hover{
 .s2 .sobre .txtsobre{
     width: 400px;
     text-align: start;
+    background-color: #7963d243;
+    padding: 40px;
+    border-radius: 10px;
+    height: 340px;
+    transition: all 0.5s ease;
+    border: #7a63d2 1px solid;
+
+}
+
+.s2 .sobre .txtsobre:hover{
+   transform: translateX(10px);
+    background-color: #7a63d2;
 }
 .s2 .sobre .txtsobre h2{
     font-size: 2.4rem;
     margin-bottom: 20px;
 }
 .s2 .sobre .txtsobre a{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--cor-subtexto);
     
     
@@ -196,7 +208,7 @@ header div ul a:hover{
 .s2 .sobre .txtsobre a i:hover{
   color: var(--cor-neutra);
   transform: translateY(-5px);
-  box-shadow: 0px 5px 15px black;
+  color: #332940;
 
 }
 
@@ -265,6 +277,10 @@ header div ul a:hover{
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.s3 .deploy button{
+  text-decoration: none;
+  background-color: transparent;
 }
 
 
@@ -751,6 +767,7 @@ footer {
     border-radius: 10px;
     transition: all 0.5s ease;
     border: #7a63d2 1px solid;
+    font-size: 1.7rem;
 }
 
 #skills i:hover{
