@@ -179,7 +179,7 @@ header div ul a:hover{
     
 }
 .s2 .sobre .txtsobre{
-    width: 400px;
+    width: 490px;
     text-align: start;
     background-color: #7963d243;
     padding: 40px;
@@ -279,8 +279,15 @@ header div ul a:hover{
   justify-content: space-around;
 }
 .s3 .deploy button{
-  text-decoration: none;
+  text-decoration: underline;
   background-color: transparent;
+  color: #c6badf;
+  border: none; 
+  cursor: pointer;
+
+}
+.s3 .deploy button:hover{
+  color: #332940;
 }
 
 
