@@ -133,12 +133,14 @@ header div ul a:hover{
     color: var(--cor-subtexto);
 }
 .s1 div input{
-    background-color: var(--cor-neutra);
+    
     border-radius: 100px;
     padding: 10px;
-    border: #112d4e;
+    
     color: var(--cor-subtexto);
     transition: all 0.5s ease;
+    background-color: #7963d243;
+    border: #7a63d2 1px solid;
 
 }
 
@@ -161,7 +163,7 @@ header div ul a:hover{
     text-align: center;
     
     padding: 55px;
-    margin-top: 10%;
+    margin-top: 20%;
     
     color: var(--cor-texto);
     width: 100%;
@@ -182,16 +184,17 @@ header div ul a:hover{
     width: 490px;
     text-align: start;
     background-color: #7963d243;
+    border: #7a63d2 1px solid;
     padding: 40px;
     border-radius: 10px;
     height: 340px;
     transition: all 0.5s ease;
-    border: #7a63d2 1px solid;
+   
 
 }
 
 .s2 .sobre .txtsobre:hover{
-   transform: translateX(10px);
+   transform: translateY(10px);
     background-color: #7a63d2;
 }
 .s2 .sobre .txtsobre h2{
@@ -224,7 +227,7 @@ header div ul a:hover{
 
 
 .s3{
-    margin-top: 15%;
+    margin-top: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -770,11 +773,11 @@ footer {
 #skills i{
   
    background-color: #7963d243;
-    padding: 40px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 100px;
     transition: all 0.5s ease;
     border: #7a63d2 1px solid;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
 }
 
 #skills i:hover{
