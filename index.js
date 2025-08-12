@@ -1,5 +1,5 @@
 // Tempo da tela de carregamento (em milissegundos)
-const tempoCarregamento = 3000; // 3 segundos
+const tempoCarregamento = 2000; // 3 segundos
 
 window.addEventListener("load", () => {
   setTimeout(() => {
