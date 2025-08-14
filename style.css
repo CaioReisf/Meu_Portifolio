@@ -282,11 +282,14 @@ header div ul a:hover{
   justify-content: space-around;
 }
 .s3 .deploy button{
-  text-decoration: underline;
+  
   background-color: transparent;
   color: #c6badf;
   border: none; 
   cursor: pointer;
+  background-color: #1c1523;
+  border-radius: 15px;
+  padding: 5px;
 
 }
 .s3 .deploy button:hover{
@@ -764,6 +767,7 @@ footer {
   justify-content: center;
   flex-flow: row wrap;
   gap: 10px;
+  margin-top: 30px;
   
 }
 #skills div h2{
