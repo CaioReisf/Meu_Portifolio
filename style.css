@@ -189,6 +189,8 @@ header div ul a:hover{
     border-radius: 10px;
     height: 340px;
     transition: all 0.5s ease;
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
    
 
 }
@@ -253,6 +255,8 @@ header div ul a:hover{
     height: 340px;
     transition: all 0.5s ease;
     border: #7a63d2 1px solid;
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
     
 }
 .s3 .cards .card1 svg{
@@ -267,12 +271,14 @@ header div ul a:hover{
     transform: translateY(-10px);
     background-color: #7a63d2;
     
+    
 
 
 }
 
 #card2{
   background-color: var(--cor-neutra);
+  
   
 }
 
@@ -782,6 +788,8 @@ footer {
     transition: all 0.5s ease;
     border: #7a63d2 1px solid;
     font-size: 1.9rem;
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
 }
 
 #skills i:hover{
