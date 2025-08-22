@@ -196,8 +196,9 @@ header div ul a:hover{
 }
 
 .s2 .sobre .txtsobre:hover{
-   transform: translateY(10px);
-    background-color: #7a63d2;
+
+  transform: scale(1.1);
+  background-color: #7a63d2;
 }
 .s2 .sobre .txtsobre h2{
     font-size: 2.4rem;
