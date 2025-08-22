@@ -1,19 +1,19 @@
-// Tempo da tela de carregamento (em milissegundos)
-const tempoCarregamento = 2000; // 3 segundos
+
+const tempoCarregamento = 2000; 
 
 window.addEventListener("load", () => {
   setTimeout(() => {
     const loadingScreen = document.getElementById("loading-screen");
     const mainContent = document.getElementById("main-content");
 
-    // Aplica a classe que inicia o fade
+    
     loadingScreen.classList.add("fade-out");
 
-    // Depois que a transição terminar, oculta e mostra o conteúdo
+   
     setTimeout(() => {
       loadingScreen.style.display = "none";
       mainContent.style.display = "block";
-    }, 800); // Tempo do fade-out
+    }, 800); 
   }, tempoCarregamento);
 });
 
@@ -65,7 +65,7 @@ window.addEventListener('scroll', function () {
 
         if (charIndex === fraseAtual.length) {
           apagando = true;
-          setTimeout(digita, 1800); // Pausa depois de escrever tudo
+          setTimeout(digita, 1800);
           return;
         }
       } else {
@@ -78,7 +78,7 @@ window.addEventListener('scroll', function () {
         }
       }
 
-      setTimeout(digita, apagando ? 50 : 100); // velocidade de digitação/apagamento
+      setTimeout(digita, apagando ? 50 : 100); 
     }
 
     digita();
