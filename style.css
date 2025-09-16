@@ -62,7 +62,7 @@ header {
 
 header.scrolled {
    background-color: #7963d243;
-    border: #7a63d2 1px solid;
+   
     backdrop-filter: blur(18px) saturate(150%);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -182,8 +182,6 @@ header div ul a:hover{
 .s2 .sobre .txtsobre{
     width: 490px;
     text-align: start;
-    background-color: #7963d243;
-    border: #7a63d2 1px solid;
     padding: 40px;
     border-radius: 10px;
     height: 340px;
@@ -192,12 +190,6 @@ header div ul a:hover{
     -webkit-backdrop-filter: blur(18px) saturate(150%);
    
 
-}
-
-.s2 .sobre .txtsobre:hover{
-
-  transform: scale(1.1);
-  background-color: #7a63d2;
 }
 .s2 .sobre .txtsobre h2{
     font-size: 2.4rem;
