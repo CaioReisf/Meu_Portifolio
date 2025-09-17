@@ -121,6 +121,8 @@ header div ul a:hover{
     font-weight: 500;
     font-size: 2rem;
     line-height: 42px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     
 }
 .s1 div h1 .nome{
@@ -130,12 +132,12 @@ header div ul a:hover{
 }
 .s1 div p{
     color: var(--cor-subtexto);
+    line-height: 0px;
 }
 .s1 div input{
     
     border-radius: 100px;
-    padding: 10px;
-    
+    padding: 15px; 
     color: var(--cor-subtexto);
     transition: all 0.5s ease;
     background-color: #7963d243;
@@ -145,8 +147,8 @@ header div ul a:hover{
 
 .s1 div input:hover{
     transform: translateY(-7px);
-    background-color: var(--cor-texto);
-    color: var(--cor-primaria);
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
     cursor: pointer;
 }
 
